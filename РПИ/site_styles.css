@@ -1,7 +1,8 @@
 @font-face {
-    font-family: "Soleto"; 
+    font-family: "Soleto";
     src: url(fonts/Soleto_Trial_Bd.ttf);
 }
+
 @font-face {
     font-family: "TitlingGothicFBCond";
     src: url(fonts/TitlingGothicFBCond-Bold.ttf);
@@ -11,169 +12,250 @@
     font-family: "Verveine";
     src: url(fonts/VerveineRegular.ttf);
 }
-*{
-    font-family: "Soleto";
-    font-weight:bold;
+
+@font-face {
+    font-family: "Helvetica-Regular";
+    src: url(fonts/Helvetica-Regular.otf);
 }
-header{   
-    position:absolute;
+
+* {
+    font-family: "Soleto";
+    font-weight: bold;
+}
+
+header {
+    position: absolute;
     min-height: 240px;
     display: flex;
     justify-content: flex-start;
-    align-items:center;
+    align-items: center;
     overflow: visible;
 }
-body{
-    max-width: 1440px;
+
+body {
+    max-width: 1442px;
     margin: 0;
     background-repeat: no-repeat;
     background-color: #e0e0e0;
 }
-.menulist{
+
+.menulist {
     list-style-type: none;
     display: flex;
-    align-items:center;
-    flex-flow:row wrap;   
+    align-items: center;
+    flex-flow: row wrap;
     margin-left: 48px;
 }
-.menuitem{
+
+.menuitem {
     margin-right: 16px;
     font-size: 23px;
     text-decoration: none;
-    color:#000000;
+    color: #000000;
 }
-.logo{
+
+.logo {
     margin-left: 86px;
 }
-.home{
+
+.home {
     min-height: 650px;
 }
-.home-slider{
+
+#whiterectangle {
+    padding-top: 65px;
+    margin-top: 250px;
+    align-content: end;
+    width: 1442px;
+    height: 819px;
+    background: white;
+}
+
+.aboutBottom {
+    width: 1442px;
+    height: 819px;
+    color: #ffffff;
+}
+
+.socialicon {
+    width: 60;
+    height: 60;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 105px;
+    display: inline-block;
+}
+
+.aboutHeader {
+    font-family: "TitlingGothicFBCond";
+    font-size: 64px;
+    color: #000000;
+    letter-spacing: 0px;
+    align-items: center;
+    font-weight: 900;
+}
+
+.aboutBody {
+    font-family: "Helvetica-Regular";
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 85px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    margin-left: 255px;
+    margin-right: 255px;
+    color: #000000;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}
+
+.home-slider {
     min-height: 650px;
     max-height: 650px;
     overflow: hidden;
-    position: relative; 
+    position: relative;
     z-index: -10;
 }
-.home-slider-line{
+
+.home-slider-line {
     width: 7220px;
     min-height: 650px;
     max-height: 650px;
-    right:0;
+    right: 0;
     transition: all ease 1s;
     position: relative;
 }
-.home-slider-control{
-    position: absolute; 
+
+.home-slider-control {
+    position: absolute;
     margin-top: -400px;
-    margin-left: 260px; 
+    margin-left: 260px;
     display: flex;
     flex-direction: row;
     align-items: end;
 }
-.slider-control{
+
+.slider-control {
     width: 50px;
     height: 50px;
 }
-.slider-control>button{
+
+.slider-control>button {
     width: 50px;
     height: 50px;
     background-color: transparent;
     border: none;
 }
-.home-numbers{
+
+.home-numbers {
     overflow: hidden;
     max-width: 160px;
 }
-.home-numbers-line{
+
+.home-numbers-line {
     display: flex;
     flex-direction: row;
-    align-content: end;  
-    position: relative; 
+    align-content: end;
+    position: relative;
     transition: all ease 1s;
 }
-.home-numbers-line > p{
+
+.home-numbers-line>p {
     align-self: end;
     margin-left: 30px;
 }
-.themountains{
-    min-height:962px;
+
+.themountains {
+    min-height: 962px;
 }
-.themountains>h1{
-    width:inherit;
+
+.themountains>h1 {
+    width: inherit;
     text-align: center;
     font-family: "TitlingGothicFBCond";
-    font-size:65px;
+    font-size: 65px;
 }
-.themountains>h1>span{
+
+.themountains>h1>span {
     font-family: "Verveine";
     font-style: italic;
-    font-size:80px;
+    font-size: 80px;
     margin-left: 20px;
 }
 
-.themountains>div{
-    display:flex;
+.themountains>div {
+    display: flex;
     flex-direction: row;
 }
-.m-slider{
+
+.m-slider {
     overflow: hidden;
-    width:850px;
-    padding-left:78px;
+    width: 850px;
+    padding-left: 78px;
 }
-.m-slider-line{
+
+.m-slider-line {
     display: flex;
     flex-direction: row;
-    position: relative; 
+    position: relative;
     transition: all ease 1s;
 }
-.m-slider-item{
-    min-width:850px;    
+
+.m-slider-item {
+    min-width: 850px;
 }
-.m-slider-item>p{
-    word-break:break-all;
-    width:760px;
-    margin-top:30px;
-    margin-left:9px;
+
+.m-slider-item>p {
+    word-break: break-all;
+    width: 760px;
+    margin-top: 30px;
+    margin-left: 9px;
 }
-.frame+img{
-    margin-left:28px;
+
+.frame+img {
+    margin-left: 28px;
 }
-.frame{
-    position:absolute;
-    margin-top:-28px;
+
+.frame {
+    position: absolute;
+    margin-top: -28px;
 }
-.m-captions{
-    overflow: hidden;    
-    width:300px;
+
+.m-captions {
+    overflow: hidden;
+    width: 300px;
 }
-.m-captions-line{
+
+.m-captions-line {
     display: flex;
     flex-direction: row;
-    position: relative; 
+    position: relative;
     transition: all ease 1s;
 }
-.m-captions-line>p{
-    min-width:300px;
+
+.m-captions-line>p {
+    min-width: 300px;
 }
 
 
-.store{
-    min-height:1185px;
+.store {
+    min-height: 1185px;
     display: flex;
     flex-direction: row;
 }
-.s-left-block{
+
+.s-left-block {
     background: #ffffff;
     min-width: 175px;
     display: flex;
     flex-direction: column;
 }
 
-.storetext{
+.storetext {
     min-width: 438px;
     display: flex;
-    writing-mode:vertical-rl;
+    writing-mode: vertical-rl;
     align-items: center;
     justify-content: center;
     font-family: "TitlingGothicFBCond";
@@ -181,9 +263,10 @@ body{
     font-size: 250px;
     transform: scale(-1);
 }
-.storelistsinner{
-    min-height:1185px;
-    display:flex;
+
+.storelistsinner {
+    min-height: 1185px;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
@@ -192,35 +275,39 @@ body{
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
-.tenttext{
+
+.tenttext {
     position: absolute;
-    margin-left:231px;
-    margin-top:81px;
+    margin-left: 231px;
+    margin-top: 81px;
     font-size: 27px;
 }
-.tentprice{
+
+.tentprice {
     position: absolute;
-    font-family: "Verveine";  
-    font-weight:normal;    
-    margin-top:46px;
-    margin-left:556px;
-    font-size:80px;
-    font-style:italic;
+    font-family: "Verveine";
+    font-weight: normal;
+    margin-top: 46px;
+    margin-left: 556px;
+    font-size: 80px;
+    font-style: italic;
 }
-.startertext{
+
+.startertext {
     position: absolute;
-    margin-left:230px;
-    margin-top:357px;
+    margin-left: 230px;
+    margin-top: 357px;
     font-size: 27px;
-    color:#ffffff;
+    color: #ffffff;
 }
-.starterprice{
+
+.starterprice {
     position: absolute;
-    font-family: "Verveine";  
-    font-weight:normal;    
-    margin-top:320px;
-    margin-left:445px;
-    font-size:76px;
-    font-style:italic;
-    color:#ffffff;
+    font-family: "Verveine";
+    font-weight: normal;
+    margin-top: 320px;
+    margin-left: 445px;
+    font-size: 76px;
+    font-style: italic;
+    color: #ffffff;
 }
