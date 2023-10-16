@@ -20,17 +20,16 @@ function h_ShowPrevSlide(){
     h_UpdateSlider();
 };
 function h_UpdateSlider(){
-    h_sliderline.style.right = h_scrolloffset*1444+'px';
-    h_numbersline.style.right = (h_scrolloffset-1)*40+'px';
+    h_sliderline.style.right = h_scrolloffset*1440+'px';
+    h_numbersline.style.right = (h_scrolloffset-1)*88+'px';
     h_numbers.forEach((number, index) => { 
         if(index == h_scrolloffset){
-            number.style.fontSize = '100px';
-            number.style.margin = '0px 30px 20px 0px';
-            number.style.height = '100px';
+            number.style.fontSize = '112px';
+            // number.style.fontSize = '70pt';
+            number.style.bottom = '-30px';
         }else{
-            number.style.fontSize = '30px';
-            number.style.margin = '0px 30px 20px 0px';
-            number.style.height = '30px';
+            number.style.fontSize = '32px';
+            number.style.bottom = '5px'; 
         }
     });
     if (h_scrolloffset==0){
@@ -78,7 +77,7 @@ function m_ShowPrevSlide(){
 };
 function m_UpdateSlider(){
     m_sliderline.style.right = m_scrolloffset*850+'px';
-    m_captionsline.style.right = m_scrolloffset*300+'px';
+    m_captionsline.style.right = m_scrolloffset*400+'px';
     m_radios.forEach((radio, index) => { 
         if(index == m_scrolloffset){
             radio.checked = true;
@@ -99,5 +98,49 @@ function m_UpdateSlider(){
         m_slidernext.hidden = false;
     }
 };
+
+const s_sliderline = document.querySelector('.s-slider-line');
+const s_slidernext = document.querySelector('.s-slider-next');
+const s_sliderprev = document.querySelector('.s-slider-prev');
+const s_slides = Array.from(s_sliderline.querySelectorAll('.s-slider-item'));
+const s_slidescount = s_slides.length;
+const s_radios = Array.from(document.querySelector('.s-slider-radios').querySelectorAll('input'));
+const s_radioscount = s_radios.length;
+let s_scrolloffset = 0;
+
+s_radios.forEach((radio) => { 
+    radio.addEventListener('click', s_ShowExactSlide);
+});    
+s_slidernext.addEventListener('click', s_ShowNextSlide);
+s_sliderprev.addEventListener('click', s_ShowPrevSlide);
+
+function s_ShowExactSlide(){
+    s_scrolloffset = this.value;
+    s_UpdateSlider(); 
+}
+function s_ShowNextSlide(){
+    s_scrolloffset = (s_scrolloffset+1) % s_slidescount;
+    s_UpdateSlider();
+};
+function s_ShowPrevSlide(){
+    s_scrolloffset--;
+    if (s_scrolloffset<0){
+        s_scrolloffset+=s_slidescount;
+    }
+    s_UpdateSlider();
+};
+function s_UpdateSlider(){
+    s_sliderline.style.bottom = s_scrolloffset*1185+'px';
+    s_radios.forEach((radio, index) => { 
+        if(index == s_scrolloffset){
+            radio.checked = true;
+        }else{
+            radio.checked = false;
+        }
+    });
+};
+
+
 h_UpdateSlider();
 m_UpdateSlider();
+s_UpdateSlider();
