@@ -25,7 +25,6 @@ function h_UpdateSlider(){
     h_numbers.forEach((number, index) => { 
         if(index == h_scrolloffset){
             number.style.fontSize = '112px';
-            // number.style.fontSize = '70pt';
             number.style.bottom = '-30px';
         }else{
             number.style.fontSize = '32px';
