@@ -62,6 +62,70 @@ body {
     min-height: 650px;
 }
 
+.tour {
+    height: 2180px;
+
+}
+
+.tour>h1 {
+    text-align: center;
+
+    height: 1px;
+    font-family: "TitlingGothicFBCond";
+    font-size: 64px;
+}
+
+.tour>h1>span {
+    font-family: "Verveine";
+    font-style: italic;
+    color: #1E5A7C;
+    font-size: 80px;
+    height: 1px;
+    margin-left: 20px;
+}
+
+
+
+.tourGrid {
+    display: flex;
+    width: 1150px;
+    margin: 160px auto 0px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.tourTitle {
+    font-family: Helvetica;
+    font-size: 27px;
+    margin-top: 45px;
+    color: #000000;
+    font-weight: 800;
+    text-align: center;
+}
+
+.tourBody {
+    font-family: Helvetica;
+    font-size: 23px;
+    margin-top: 50px;
+
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+
+.tourGrid>div {
+    height: 630px;
+    width: 475px;
+    background-color: white;
+    box-shadow: 0px 5px 8px 6px rgba(34, 60, 80, 0.2);
+}
+
+.tourGrid>div:nth-child(-n + 2) {
+    margin-bottom: 80px;
+}
+
 #whiterectangle {
     padding-top: 65px;
     margin-top: 250px;
@@ -90,6 +154,7 @@ body {
     font-family: "TitlingGothicFBCond";
     font-size: 64px;
     color: #000000;
+    text-align: center;
     letter-spacing: 0px;
     align-items: center;
     font-weight: 900;
@@ -98,8 +163,9 @@ body {
 .aboutBody {
     font-family: "Helvetica-Regular";
     font-size: 30px;
+    text-align: center;
     font-weight: 400;
-    margin-top: 85px;
+    margin-top: 160px;
     letter-spacing: 0px;
     word-spacing: 0px;
     margin-left: 255px;
