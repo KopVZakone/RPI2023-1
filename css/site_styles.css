@@ -11,14 +11,10 @@
     src: url(../fonts/TitlingGothicFBCond-Bold.ttf);
 }
 
-@font-face {
+/* @font-face {
     font-family: Verveine;
     src: url(../fonts/VerveineRegular.ttf);
-}
-@font-face {
-    font-family: Helvetica-Regular;
-    src: url(../fonts/Helvetica-Regular.otf);
-}
+} */
 *{
     font-family: Soleto;
     font-weight:bold;
@@ -139,7 +135,7 @@ input[type="radio"]:checked{
     letter-spacing: -0.3px;
 }
 .themountains>h1>span{
-    font-family: Verveine;
+    font-family: 'Verveine', sans-serif;
     font-style: italic;
     font-size:80px;
     margin-left: 20px;
@@ -252,7 +248,7 @@ input[type="radio"]:checked{
     line-height: 36px;
 }
 .quoteleft, .quoteright{
-    font-family: Verveine;
+    font-family: 'Verveine', sans-serif;
     font-size: 340px;
     font-weight: 300;
 }
@@ -277,7 +273,7 @@ input[type="radio"]:checked{
     font-size: 64px;
 }
 .tour>h1>span {
-    font-family: Verveine;
+    font-family: 'Verveine', sans-serif;
     font-style: italic;
     color: #1E5A7C;
     font-size: 80px;
@@ -391,7 +387,7 @@ input[type="radio"]:checked{
 }
 .tentprice{
     position: absolute;
-    font-family: Verveine;  
+    font-family: 'Verveine', sans-serif;  
     font-weight:normal;    
     top:-34px;
     left:556px;
@@ -408,7 +404,7 @@ input[type="radio"]:checked{
 }
 .starterprice{
     position: absolute;
-    font-family: Verveine;  
+    font-family: 'Verveine', sans-serif;  
     font-weight:normal;    
     top:244px;
     left:445px;
