@@ -13,11 +13,11 @@
 
 @font-face {
     font-family: "Verveine";
-    src: url(fonts/VerveineRegular.ttf);
+    src: url(./fonts/VerveineRegular.ttf);
 }
 @font-face {
     font-family: "Helvetica-Regular";
-    src: url(fonts/Helvetica-Regular.otf);
+    src: url(./fonts/Helvetica-Regular.otf);
 }
 *{
     font-family: "Soleto";
