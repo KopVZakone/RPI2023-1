@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Soleto"; 
-    src: url(fonts/Soleto_Trial_Bd.ttf);
+    src: url(./fonts/Soleto_Trial_Bd.ttf);
 }
 @font-face {
     font-family: "Soleto RG"; 
-    src: url(fonts/Soleto_Trial_Rg.ttf);
+    src: url(./fonts/Soleto_Trial_Rg.ttf);
 }
 @font-face {
     font-family: "TitlingGothicFBCond";
-    src: url(fonts/TitlingGothicFBCond-Bold.ttf);
+    src: url(./fonts/TitlingGothicFBCond-Bold.ttf);
 }
 
 @font-face {
