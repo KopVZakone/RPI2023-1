@@ -40,6 +40,9 @@ body{
 button:hover, input:hover{
     cursor:pointer;
 }
+a{
+    text-decoration: none;   
+}
 input[type="radio"]{
     appearance: none;  
     border-radius: 50%;
@@ -60,15 +63,14 @@ input[type="radio"]:checked{
 }
 .navlist{
     top:-2px;
-    left:87px;
+    left:47px;
     position: relative;
     list-style-type: none;
     display: flex;
     align-items:center;
     flex-flow:row wrap;   
 }
-.navlist>a{
-    text-decoration: none;
+.navlist>li>a{
     color:#000000;
     margin-right: 16px;
     font-size: 23px;
@@ -126,8 +128,8 @@ input[type="radio"]:checked{
 
 
 .themountains{
-    min-height:962px;
-    margin-top: 100px;
+    min-height:876px;
+    margin-top: 105px;/*отступ между блока по другому сделать невозможно без того, чтобы перелопатить предыдущий блок*/
 }
 .themountains>h1{
     width:inherit;
@@ -177,10 +179,12 @@ input[type="radio"]:checked{
     letter-spacing: 0.3px;
     text-align: center;
 }
-.m-slider-item>img+img{
+.m-video{
     position:absolute;
     top:28px;
     left:28px;
+    width:700px;
+    height:382px;
 }
 .m-slider-controls{
     justify-self:flex-end;
@@ -205,36 +209,69 @@ input[type="radio"]:checked{
     width:147px;
 }
 
-.aboutMiddle {
-    max-width: 1442px;
-    max-height: 665px;
-    margin: 0 auto;
+.about_us{  
+    background-color: #ffffff;
+    height:666px;
+    margin-bottom: 175px;
+}
+.aboutH{
+    font-family: "TitlingGothicFBCond";
+    font-size: 64px;
+    color: #000000;
     text-align: center;
-}
-
-.aboutMiddle>h2 {
-    font-size: 55px;
-    padding-top: 60px;
-    text-transform: uppercase;
-    font-family: "TitlingGothicFBCond", sans-serif;
-    letter-spacing: -5px;
-}
-
-.aboutMiddle>p {
-    font-size: 25px; /* Размер шрифта текста описания */
-    font-family: "TitlingGothicFBCond", sans-serif;
-    line-height: 0.15; /* Межстрочный интервал */
     letter-spacing: 0px;
-  }
+    font-weight: 900;
+
+}
+.aboutmain{
+    margin-top: -6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 966px;
+    height:615px;
+}
+.aboutflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:1000px;
+    margin:0 auto;
+    height: inherit;    
+}
+.FirstP {
+    position: relative;
+    top:14px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0px;    
+    color: #000000;
+    font-family: "Soleto RG"; 
+    line-height: 36px;
+}
+.quoteleft, .quoteright{
+    font-family: "Verveine";
+    font-size: 340px;
+    font-weight: 300;
+}
+.quoteleft{
+    position: relative;
+    top:-297px;
+    left: 78px;
+}
+.quoteright{
+    position: relative;
+    top: 17px;
+}
 
 
 .tour {
-    height: 2180px;
+    height: 2006px;
 }
 .tour>h1 {
     text-align: center;
-
-    height: 1px;
+    height: 100px;
     font-family: "TitlingGothicFBCond";
     font-size: 64px;
 }
@@ -249,7 +286,7 @@ input[type="radio"]:checked{
 .tourGrid {
     display: flex;
     width: 1150px;
-    margin: 160px auto 0px;
+    margin: 100px auto 0px;
 
     flex-wrap: wrap;
     justify-content: space-between;
@@ -326,12 +363,19 @@ input[type="radio"]:checked{
     position: relative;  
     transition: all ease 1s;  
 }
+.s-slider-item>a{
+    transition: all ease 0.5s;
+}
+.s-slider-item>a:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
 .s-slider-item{
     height:1185px;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-start; 
 }
 .storeitem{
     position: relative;
@@ -341,6 +385,7 @@ input[type="radio"]:checked{
     left:231px;
     top:54px;
     font-size: 27px;
+    color:#000000;
 }
 .tentprice{
     position: absolute;
@@ -350,6 +395,7 @@ input[type="radio"]:checked{
     left:556px;
     font-size:80px;
     font-style:italic;
+    color:#000000;
 }
 .startertext{
     position: absolute;
@@ -369,19 +415,13 @@ input[type="radio"]:checked{
     color:#ffffff;
 }
 
-#whiterectangle {
-    padding-top: 65px;
-    margin-top: 250px;
-    align-content: end;
-    width: 1442px;
-    height: 819px;
-    background: white;
-}
 
 .aboutBottom {
-    width: 1442px;
     height: 819px;
     color: #ffffff;
+    margin-top: 225px;
+    padding-top: 67px;
+    background: white;
 }
 
 .socialicon {
@@ -389,7 +429,7 @@ input[type="radio"]:checked{
     height: 60;
     margin-right: 10px;
     margin-left: 10px;
-    margin-top: 105px;
+    margin-top: 18px;
     display: inline-block;
 }
 
@@ -401,23 +441,19 @@ input[type="radio"]:checked{
     letter-spacing: 0px;
     align-items: center;
     font-weight: 900;
+    margin-bottom: 90px;
 }
 
 .aboutBody {
-    font-family: "Helvetica-Regular";
+    font-family: "Soleto RG";
     font-size: 30px;
     text-align: center;
     font-weight: 400;
-    margin-top: 160px;
     letter-spacing: 0px;
     word-spacing: 0px;
-    margin-left: 255px;
-    margin-right: 255px;
+    margin: 59px auto;
+    width: 940px;
     color: #000000;
-    align-self: center;
-    align-content: center;
-    align-items: center;
-}
-center>a{
-    text-decoration: none;
+    height: 179px;
+    
 }
