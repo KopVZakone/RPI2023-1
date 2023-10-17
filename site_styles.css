@@ -1,0 +1,459 @@
+@font-face {
+    font-family: "Soleto"; 
+    src: url(fonts/Soleto_Trial_Bd.ttf);
+}
+@font-face {
+    font-family: "Soleto RG"; 
+    src: url(fonts/Soleto_Trial_Rg.ttf);
+}
+@font-face {
+    font-family: "TitlingGothicFBCond";
+    src: url(fonts/TitlingGothicFBCond-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Verveine";
+    src: url(fonts/VerveineRegular.ttf);
+}
+@font-face {
+    font-family: "Helvetica-Regular";
+    src: url(fonts/Helvetica-Regular.otf);
+}
+*{
+    font-family: "Soleto";
+    font-weight:bold;
+}
+header{   
+    position:absolute;
+    min-height: 240px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    z-index:10;
+}
+body{
+    max-width: 1440px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-color: #e0e0e0;
+}
+button:hover, input:hover{
+    cursor:pointer;
+}
+a{
+    text-decoration: none;   
+}
+input[type="radio"]{
+    appearance: none;  
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 12px solid #4e171b;
+    transition: all linear 0.2s;
+}
+input[type="radio"]:checked{ 
+    border-width: 6px;  
+}
+
+.slider-line-hor{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    transition: all ease 1s;
+}
+.navlist{
+    top:-2px;
+    left:47px;
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    align-items:center;
+    flex-flow:row wrap;   
+}
+.navlist>li>a{
+    color:#000000;
+    margin-right: 16px;
+    font-size: 23px;
+    word-spacing: 1px;
+}
+.logo{
+    margin-left: 78px;   
+}
+.home{
+    min-height: 650px;
+    position: relative;
+}
+.home-slider{
+    height:650px;
+    overflow: hidden;
+    position: relative; 
+    z-index: -10;
+}   
+.home-slider-control{
+    position: absolute; 
+    bottom:268px;
+    left: 260px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.slider-control{
+    width: 50px;
+    height: 50px;
+}
+.slider-control>button{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
+.home-numbers{
+    overflow: hidden;
+    max-width: 264px;
+}
+.home-numbers-line{ 
+    align-items: flex-end; 
+}
+.home-numbers-line > p{
+    position: relative;
+    margin-left: 30px;
+    text-align: center;
+    margin: 0px;
+    min-width:88px;
+}
+.home>img{
+    position: absolute;
+    bottom:-16px;
+}
+
+
+.themountains{
+    min-height:876px;
+    margin-top: 105px;/*отступ между блока по другому сделать невозможно без того, чтобы перелопатить предыдущий блок*/
+}
+.themountains>h1{
+    width:inherit;
+    text-align: center;
+    font-family: "TitlingGothicFBCond";
+    font-size:65px;
+    letter-spacing: -0.3px;
+}
+.themountains>h1>span{
+    font-family: "Verveine";
+    font-style: italic;
+    font-size:80px;
+    margin-left: 20px;
+}
+.themountains>div{
+    display:flex;
+    flex-direction: row;
+}
+.m-slider{
+    overflow: hidden;
+    width:850px;
+    padding-left:76px;
+}
+.m-slider-item{
+    min-width:850px;   
+    position: relative; 
+}
+.m-slider-item>p{
+    width:770px;
+    margin-top:38px;
+    margin-left:8px;
+    font-family: "Soleto RG";
+    font-size:25px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 30px;
+}
+.m-captions{
+    overflow: hidden;    
+    width:400px;
+    position: relative;
+    left:-4px;
+}
+.m-captions-line>p{
+    min-width:400px;
+    font-size:26px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+.m-video{
+    position:absolute;
+    top:28px;
+    left:28px;
+    width:700px;
+    height:382px;
+}
+.m-slider-controls{
+    justify-self:flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: space-between;
+    width:620px;
+    height:320px;
+}
+.m-slider-control{
+    position: relative;
+    top:-36px;
+    left:-23px;
+    display: flex;
+    flex-direction: row;
+}
+.m-slider-radios{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width:147px;
+}
+
+.about_us{  
+    background-color: #ffffff;
+    height:666px;
+    margin-bottom: 175px;
+}
+.aboutH{
+    font-family: "TitlingGothicFBCond";
+    font-size: 64px;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 0px;
+    font-weight: 900;
+
+}
+.aboutmain{
+    margin-top: -6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 966px;
+    height:615px;
+}
+.aboutflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:1000px;
+    margin:0 auto;
+    height: inherit;    
+}
+.FirstP {
+    position: relative;
+    top:14px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0px;    
+    color: #000000;
+    font-family: "Soleto RG"; 
+    line-height: 36px;
+}
+.quoteleft, .quoteright{
+    font-family: "Verveine";
+    font-size: 340px;
+    font-weight: 300;
+}
+.quoteleft{
+    position: relative;
+    top:-297px;
+    left: 78px;
+}
+.quoteright{
+    position: relative;
+    top: 17px;
+}
+
+
+.tour {
+    height: 2006px;
+}
+.tour>h1 {
+    text-align: center;
+    height: 100px;
+    font-family: "TitlingGothicFBCond";
+    font-size: 64px;
+}
+.tour>h1>span {
+    font-family: "Verveine";
+    font-style: italic;
+    color: #1E5A7C;
+    font-size: 80px;
+    height: 1px;
+    margin-left: 20px;
+}
+.tourGrid {
+    display: flex;
+    width: 1150px;
+    margin: 100px auto 0px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.tourTitle {
+    font-family: Helvetica;
+    font-size: 27px;
+    margin-top: 45px;
+    color: #000000;
+    font-weight: 800;
+    text-align: center;
+}
+.tourBody {
+    font-family: Helvetica;
+    font-size: 23px;
+    margin-top: 50px;
+
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+.tourGrid>div {
+    height: 630px;
+    width: 475px;
+    background-color: white;
+    box-shadow: 0px 5px 8px 6px rgba(34, 60, 80, 0.2);
+}
+.tourGrid>div:nth-child(-n + 2) {
+    margin-bottom: 80px;
+}
+
+.store{
+    min-height:1185px;
+    display: flex;
+    flex-direction: row;
+}
+.s-left-block{
+    background: #ffffff;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.s-slider-radios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    height:150px;   
+}
+
+.storetext{
+    min-width: 379px;
+    display: flex;
+    writing-mode:vertical-rl;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: "TitlingGothicFBCond";
+    font-weight: bold;
+    font-size: 250px;
+    transform: scale(-1);
+}
+.s-slider{
+    overflow: hidden;
+    height: 1185px;
+    width:839px;
+}
+.s-slider-line{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;  
+    transition: all ease 1s;  
+}
+.s-slider-item>a{
+    transition: all ease 0.5s;
+}
+.s-slider-item>a:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.s-slider-item{
+    height:1185px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start; 
+}
+.storeitem{
+    position: relative;
+}
+.tenttext{
+    position: absolute;
+    left:231px;
+    top:54px;
+    font-size: 27px;
+    color:#000000;
+}
+.tentprice{
+    position: absolute;
+    font-family: "Verveine";  
+    font-weight:normal;    
+    top:-34px;
+    left:556px;
+    font-size:80px;
+    font-style:italic;
+    color:#000000;
+}
+.startertext{
+    position: absolute;
+    left:230px;
+    top:330px;
+    font-size: 27px;
+    color:#ffffff;
+}
+.starterprice{
+    position: absolute;
+    font-family: "Verveine";  
+    font-weight:normal;    
+    top:244px;
+    left:445px;
+    font-size:76px;
+    font-style:italic;
+    color:#ffffff;
+}
+
+
+.aboutBottom {
+    height: 819px;
+    color: #ffffff;
+    margin-top: 225px;
+    padding-top: 67px;
+    background: white;
+}
+
+.socialicon {
+    width: 60;
+    height: 60;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+.aboutHeader {
+    font-family: "TitlingGothicFBCond";
+    font-size: 64px;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 0px;
+    align-items: center;
+    font-weight: 900;
+    margin-bottom: 90px;
+}
+
+.aboutBody {
+    font-family: "Soleto RG";
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    margin: 59px auto;
+    width: 940px;
+    color: #000000;
+    height: 179px;
+    
+}
