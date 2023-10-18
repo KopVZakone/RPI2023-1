@@ -50,6 +50,7 @@ const m_slidernext = document.querySelector('.m-slider-next');
 const m_sliderprev = document.querySelector('.m-slider-prev');
 const m_slides = Array.from(m_sliderline.querySelectorAll('.m-slider-item'));
 const m_slidescount = m_slides.length;
+const m_videos = Array.from(m_sliderline.querySelectorAll('video'))
 const m_captionsline = document.querySelector('.m-captions-line');
 const m_captionscount =m_captionsline.length;
 const m_radios = Array.from(document.querySelector('.m-slider-radios').querySelectorAll('input'));
@@ -83,6 +84,9 @@ function m_UpdateSlider(){
         }else{
             radio.checked = false;
         }
+    });
+    m_videos.forEach((video) => { 
+        video.pause();
     });
     if (m_scrolloffset==0){
         m_sliderprev.hidden = true;

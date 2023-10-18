@@ -10,11 +10,6 @@
     font-family: TitlingGothicFBCond;
     src: url(../fonts/TitlingGothicFBCond-Bold.ttf);
 }
-
-/* @font-face {
-    font-family: Verveine;
-    src: url(../fonts/VerveineRegular.ttf);
-} */
 *{
     font-family: Soleto;
     font-weight:bold;
@@ -170,7 +165,7 @@ input[type="radio"]:checked{
     position: relative;
     left:-4px;
 }
-.m-captions-line>p{
+.m-captions-line>h3{
     min-width:400px;
     font-size:26px;
     letter-spacing: 0.3px;
@@ -266,13 +261,13 @@ input[type="radio"]:checked{
 .tour {
     height: 2006px;
 }
-.tour>h1 {
+.tour>h2 {
     text-align: center;
     height: 100px;
     font-family: TitlingGothicFBCond;
     font-size: 64px;
 }
-.tour>h1>span {
+.tour>h2>span {
     font-family: 'Verveine', sans-serif;
     font-style: italic;
     color: #1E5A7C;
@@ -437,8 +432,8 @@ input[type="radio"]:checked{
     color: #000000;
     text-align: center;
     letter-spacing: 0px;
-    align-items: center;
     font-weight: 900;
+    margin-top:64px;
     margin-bottom: 90px;
 }
 
