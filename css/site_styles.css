@@ -23,7 +23,7 @@ header{
     z-index:10;
 }
 body{
-    max-width: 1440px;
+    width: 1440px;
     margin: 0;
     background-repeat: no-repeat;
     background-color: #e0e0e0;
